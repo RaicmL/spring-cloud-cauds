@@ -1,10 +1,10 @@
 eureka:
   instance:
-    hostname: registry
+    hostname: registry1,registry2
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@120.27.196.145:8761/eureka/,http://user:${REGISTRY_SERVER_PASSWORD:password}@192.168.1.173:8761/eureka/
 
 hystrix:
   command:
@@ -21,6 +21,9 @@ ribbon:
 spring:
   rabbitmq:
     host: rabbitmq
+    username: juhe
+    password: juhe123678
+
   sleuth:
     sampler:
       percentage: 1
@@ -30,11 +33,10 @@ spring:
       skip-pattern: "^org.*HystrixStreamTask$"
 
 authserver:
-    hostname: auth-service
     port: 5000
     contextPath: /uaa
 
 security:
   oauth2:
     resource:
-      user-info-uri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/current
+      user-info-uri: http://120.27.196.145:8060${authserver.contextPath}/current

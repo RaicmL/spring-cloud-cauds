@@ -30,3 +30,15 @@ zuul:
     svcb-service:
       path: /svcb/**
       sensitiveHeaders:
+    cauds-service:
+      path: /cauds/**
+      sensitiveHeaders:
+    cauds-account-service:
+      path: /cauds-account/**
+      sensitiveHeaders:
+    cauds-exchange-service:
+      path: /cauds-exchange/**
+      sensitiveHeaders:
+    cauds-statistics-service:
+      path: /cauds-stat/**
+      sensitiveHeaders:

@@ -94,6 +94,75 @@ jsdata
 
 502
 
+cauds-account-service.yml
+file
+
+
+
+add
+
+413aa17ac4db8de8e2d95493a8d2aca5
+
+
+
+
+
+
+
+
+
+
+
+copied
+svn://121.40.71.49/repos/juhe-cloud/config/src/main/resources/shared/cauds-account-service.yml
+4067
+
+cauds-exchange-service.yml
+file
+
+
+
+add
+
+69b871f094eec77f94117532ecb26dd8
+
+
+
+
+
+
+
+
+
+
+
+copied
+svn://121.40.71.49/repos/juhe-cloud/config/src/main/resources/shared/cauds-exchange-service.yml
+4067
+
+cauds-statistics-service.yml
+file
+
+
+
+add
+
+4f7c135908e199360dec90fdce6c51f6
+
+
+
+
+
+
+
+
+
+
+
+copied
+svn://121.40.71.49/repos/juhe-cloud/config/src/main/resources/shared/cauds-statistics-service.yml
+4067
+
 gateway.yml
 file
 
