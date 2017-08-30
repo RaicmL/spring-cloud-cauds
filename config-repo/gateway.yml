@@ -42,3 +42,5 @@ zuul:
     cauds-statistics-service:
       path: /cauds-stat/**
       sensitiveHeaders:
+    cauds-tasks-service:
+      path: /cauds-tasks/**
