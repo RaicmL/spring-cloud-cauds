@@ -15,6 +15,6 @@ security:
     client:
       clientId: cauds-account-service
       clientSecret: ${security.user.password}
-      accessTokenUri: http://120.27.196.145:8060${authserver.contextPath}/oauth/token
+      accessTokenUri: http://192.168.1.220:8060${authserver.contextPath}/oauth/token
       grant-type: client_credentials
       scope: server
