@@ -4,7 +4,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@120.27.196.145:8761/eureka/
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@192.168.1.220:8761/eureka/
 
 hystrix:
   command:

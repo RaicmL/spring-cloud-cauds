@@ -14,7 +14,7 @@ hystrix:
             timeoutInMilliseconds: 20000
 
 ribbon:
-  ReadTimeout: 5000
+  ReadTimeout: 10000
   ConnectTimeout: 10000
 
 zuul:
