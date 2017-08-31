@@ -34,7 +34,7 @@ zuul:
       path: /cauds/**
       sensitiveHeaders:
     cauds-account-service:
-      path: /cauds-account/**
+      path: /cauds-accounts/**
       sensitiveHeaders:
     cauds-exchange-service:
       path: /cauds-exchange/**
