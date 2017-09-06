@@ -44,3 +44,5 @@ zuul:
       sensitiveHeaders:
     cauds-tasks-service:
       path: /cauds-tasks/**
+    risk-manage-service:
+      path: /risk-manage/**
