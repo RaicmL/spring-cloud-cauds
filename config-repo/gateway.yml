@@ -48,5 +48,5 @@ zuul:
       path: /risk-manage/**
     pay-account-service:
       path: /pay/**
-    cash-accont-service:
+    cash-account-service:
       path: /cash-account/**
