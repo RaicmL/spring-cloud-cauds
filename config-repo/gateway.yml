@@ -46,3 +46,7 @@ zuul:
       path: /cauds-tasks/**
     risk-manage-service:
       path: /risk-manage/**
+    pay-account-service:
+      path: /pay/**
+    cash-accont-service:
+      path: /cash-account/**
