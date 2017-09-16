@@ -50,3 +50,5 @@ zuul:
       path: /pay/**
     cash-account-service:
       path: /cash-account/**
+    cash-tasks-service:
+      path: /cash-tasks/**
