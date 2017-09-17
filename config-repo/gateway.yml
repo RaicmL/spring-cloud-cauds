@@ -46,9 +46,12 @@ zuul:
       path: /cauds-tasks/**
     risk-manage-service:
       path: /risk-manage/**
+      sensitiveHeaders:
     pay-account-service:
       path: /pay/**
+      sensitiveHeaders:
     cash-account-service:
       path: /cash-account/**
+      sensitiveHeaders:
     cash-tasks-service:
       path: /cash-tasks/**
