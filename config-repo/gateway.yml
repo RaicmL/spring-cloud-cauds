@@ -11,19 +11,11 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 200000
+            timeoutInMilliseconds: 20000
 
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
-  MaxAutoRetriesNextServer: 1
-  MaxAutoRetries: 1
-
-risk-manage-service:
-  ribbon:
-  ReadTimeout: 180000
-  ConnectTimeout: 180000
-  hystrix:
 
 zuul:
   ignoredServices: '*'
