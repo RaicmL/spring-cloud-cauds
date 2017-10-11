@@ -11,11 +11,11 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 200000
 
 ribbon:
-  ReadTimeout: 10000
-  ConnectTimeout: 10000
+  ReadTimeout: 100000
+  ConnectTimeout: 100000
 
 zuul:
   ignoredServices: '*'
@@ -44,3 +44,16 @@ zuul:
       sensitiveHeaders:
     cauds-tasks-service:
       path: /cauds-tasks/**
+    risk-manage-service:
+      path: /risk-manage/**
+      sensitiveHeaders:
+    pay-account-service:
+      path: /pay/**
+      sensitiveHeaders:
+    cash-account-service:
+      path: /cash-account/**
+      sensitiveHeaders:
+    cash-tasks-service:
+      path: /cash-tasks/**
+    analysis-service:
+      path: /analysis/**

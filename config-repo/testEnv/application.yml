@@ -4,19 +4,20 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@192.168.1.220:8761/eureka/
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@192.168.1.169:8761/eureka/
 
 hystrix:
   command:
     default:
       execution:
         isolation:
+          strategy: THREAD
           thread:
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 200000
 
 ribbon:
-  ReadTimeout: 5000
-  ConnectTimeout: 5000
+  ReadTimeout: 100000
+  ConnectTimeout: 100000
 
 spring:
   rabbitmq:
@@ -39,4 +40,4 @@ authserver:
 security:
   oauth2:
     resource:
-      user-info-uri: http://192.168.1.220:8060${authserver.contextPath}/current
+      user-info-uri: http://10.46.70.178:8060${authserver.contextPath}/current

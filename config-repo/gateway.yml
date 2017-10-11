@@ -55,3 +55,5 @@ zuul:
       sensitiveHeaders:
     cash-tasks-service:
       path: /cash-tasks/**
+    analysis-service:
+      path: /analysis/**
