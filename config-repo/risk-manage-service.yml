@@ -27,6 +27,7 @@ hystrix:
           thread:
             timeoutInMilliseconds: 180000
 
-ribbon:
-  ReadTimeout: 180000
-  ConnectTimeout: 180000
+WhiteKnight:
+  ribbon:
+    ReadTimeout: 180000
+    ConnectTimeout: 180000
