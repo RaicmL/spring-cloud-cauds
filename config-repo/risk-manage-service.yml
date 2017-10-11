@@ -27,7 +27,7 @@ hystrix:
           thread:
             timeoutInMilliseconds: 180000
 
-WhiteKnight:
+risk-manage-service:
   ribbon:
     ReadTimeout: 180000
     ConnectTimeout: 180000

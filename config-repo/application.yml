@@ -11,12 +11,13 @@ hystrix:
     default:
       execution:
         isolation:
+          strategy: THREAD
           thread:
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 200000
 
 ribbon:
-  ReadTimeout: 10000
-  ConnectTimeout: 10000
+  ReadTimeout: 100000
+  ConnectTimeout: 100000
 
 spring:
   rabbitmq:
