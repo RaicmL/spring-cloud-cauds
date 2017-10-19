@@ -16,7 +16,7 @@ eureka:
 
 spring:
   datasource:
-    url: jdbc:mysql://rm-bp1umm0x75uj9u4jpo.mysql.rds.aliyuncs.com:3306/oauth_fin?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://rm-bp1umm0x75uj9u4jp.mysql.rds.aliyuncs.com:3306/oauth_fin?useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.jdbc.Driver
     username: flower
     password: js123678
